@@ -15,7 +15,7 @@ Parameters:
     Default: sip-chime-audio-files
 
 Resources:
- SipDailInFunctionRole:
+ SipDialInFunctionRole:
     Type: AWS::IAM::Role
     Properties:
       AssumeRolePolicyDocument:
@@ -47,7 +47,7 @@ Resources:
      Roles:
        # This function role will have this policy
        - Ref: ConferenceStartFunctionRole
-       - Ref: SipDailInFunctionRole
+       - Ref: SipDialInFunctionRole
 
  S3BucketPolicy:
    Type: AWS::S3::BucketPolicy
@@ -90,7 +90,7 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       Handler: handlers.sip
-      Role: !GetAtt SipDailInFunctionRole.Arn
+      Role: !GetAtt SipDialInFunctionRole.Arn
       Environment:
         Variables:
           BUCKET_NAME:
