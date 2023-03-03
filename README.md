@@ -16,8 +16,8 @@ Lambda deployment
 - ```  sam deploy --guided   ```
 - Use us-east-1 region in option while in deployment
 - Take the endpoint URL.
-- clone the [Frontend demo repo](https://github.com/WebRTCventures/simple-chime-frontend)
-- Change the URL [here](https://github.com/WebRTCventures/simple-chime-frontend/blob/main/src/App.js#L165)
+- clone the [Frontend demo repo](https://github.com/WebRTCventures/simple-chime-frontend/tree/1544d3ee7bee7a7c2b42ca2135c75245e3fb773e)
+- Change the URL [here](https://github.com/WebRTCventures/simple-chime-frontend/blob/1544d3ee7bee7a7c2b42ca2135c75245e3fb773e/src/App.js#L165)
 - ```  npm i   ```
 - ```  npm start   ```
 - check in the browser with ```    https://localhost:3000  ```
